@@ -14,5 +14,11 @@ public class DemoService {
         logger.warn("Message is {}", msg);
         logger.error("Message is {}", msg);
         logger.trace("Message is {}", msg);
+
+        /* Test for log transformation of json attributes */
+        logger.debug("Test for json transformation of {\"test\": \"total\", \"logo\": \"AAAA\", \"cas\": 1}");
+        logger.debug("Test for json transformation of {'test': 'total', 'logo': 'AAAA', 'cas': 2}");
+        logger.debug("Test for json transformation of {test: total, logo: AAAA, cas: 3 }");
+        logger.debug("Test for json transformation of {\n\ttest: total,\n\tlogo: AAAA,\n\tcas: 4\n}");
     }
 }
