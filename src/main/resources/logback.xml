@@ -6,6 +6,7 @@
         <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
             <layout class="com.example.demo.layouts.PatternLayoutCustom">
                 <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+                <flavor>fruits</flavor>
             </layout>
         </encoder>
     </appender>
